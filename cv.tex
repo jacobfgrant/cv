@@ -1,0 +1,245 @@
+\documentclass[10pt]{article}
+
+%%% Packages %%%
+\usepackage{array}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage[margin=0.5in, nofoot]{geometry}
+\usepackage{hyperref}
+\usepackage{multicol}   % Multi-column lists
+\usepackage{multirow}   % Multi-row tables
+\usepackage{parskip}
+\usepackage{setspace}
+\usepackage{tabularx}
+\usepackage{titlesec}
+\usepackage{titling}    % Allow more titling options
+\usepackage{verbatim}   % Multiline comments
+
+%%% Page Style & Line Lengths
+\setlength{\headheight}{0pt}
+\renewcommand{\headrulewidth}{0pt}
+%\linespread{0.9}
+%\setlength{\parskip}{0em}
+%\setlength\floatsep{-100cm}
+%\setlength\lineskip{0pt}
+\pagestyle{fancy}
+
+% Header
+\lhead{}
+\chead{}
+\rhead{}
+
+% Footer
+\lfoot{Jacob F. Grant}
+\cfoot{\thepage}
+\rfoot{}
+
+%%% List formatting
+\setlist{nosep, noitemsep, topsep=0pt}
+
+% Section formatting and spacing
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{1pt}{1pt}
+
+% Subsection formatting and spacing
+\titleformat{\subsection}{\raggedright}{}{0em}{}[\titlerule]
+\titlespacing{\subsection}{0pt}{1pt}{0em}
+
+% Ragged columns
+\newcolumntype{L}{>{\raggedright\arraybackslash}X}
+\newcolumntype{R}{>{\raggedleft\arraybackslash}X}
+
+
+%%% New Commands
+\newcommand{\afterlistspace}[0]{\vspace{-1.5em}}
+
+
+%%%%%%%%%%%%%%%%%%%%%%
+%%% Begin Document %%%
+%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+\thispagestyle{empty}
+
+
+\begin{tabularx}{\linewidth}{
+    >{\hsize=2\hsize}X|% 50% of 3\hsize 
+    >{\hsize=.5\hsize}R% 30% of 3\hsize
+    >{\hsize=.75\hsize}L% 30% of 3\hsize
+    >{\hsize=.75\hsize}R% 30% of 3\hsize
+    >{\hsize=.75\hsize}L% 30% of 3\hsize
+    % sum=5.0\hsize for 3 columns
+  }
+    \multirow{2}{*}{\Huge \textbf{Jacob F. Grant}} & \textsc{Website:} & \href{https://jacobfgrant.com}{jacobfgrant.com} & \textsc{Blog:} & \href{https://therestoftheowl.com}{therestoftheowl.com}
+    \\
+    & \textsc{Email:} & \href{mailto:jobs@jacobfgrant.com}{jobs@jacobfgrant.com} & \textsc{GitHub:} & \href{https://github.com/jacobfgrant}{jacobfgrant}
+    \\
+\end{tabularx}
+
+
+
+%\begin{comment}
+
+\section{Objective} % Objective section
+
+Leverage my broad array of computer science and systems administration knowledge, strong communication skills, and keen analytical abilities to solve interesting problems, drive innovation, and create a positive impact both where I work and beyond.
+
+%\end{comment}
+
+
+
+\section{Skills} % Skills section
+
+
+\subsection{Technical (IT \& CS) Skills}
+
+\begin{tabularx}{\linewidth}{
+    >{\hsize=1\hsize}X|% 50% of 3\hsize 
+    >{\hsize=1\hsize}X|% 30% of 3\hsize
+    >{\hsize=1\hsize}X% 30% of 3\hsize
+    % sum=5.0\hsize for 3 columns
+  }
+    \textbf{Programming \& Scripting}
+    & \textbf{Cloud Technologies}
+    & \textbf{Systems Administration}
+    \\
+    \begin{itemize}[noitemsep,topsep=0pt]
+        \vspace{-0.75em}
+
+        \item Proficiency/mastery of multiple languages, including \textbf{Python}, \textbf{R}, \textbf{Bash}, %\textbf{PowerShell} , etc.
+        % Remove this and include PowerShell when ready
+        etc.
+
+        \item Configuration management tools such as \textbf{Ansible} and \textbf{Chef}
+
+        \item Ancillary tools (\textbf{Linux}, \textbf{Git}, \textbf{database/SQL}, \textbf{Docker}, etc.)
+        
+        \afterlistspace
+    \end{itemize}
+
+    & Managing infrastructure in \textbf{Amazon Web Services}, \textbf{DigitalOcean}, and \textbf{Office 365} -- including cloud security and ``serverless'' applications -- using orchestration tools such as cloud APIs, \textbf{Packer}, and \textbf{Terraform}.
+
+    & %Extensive experience in s
+    %System adminstration, homelabbing, networking, and endpoint management, using \textbf{MS Active Directory}, \textbf{VMware ESXi}, etc., with a focus on macOS management using \textbf{Apple MDM} and managing and contributing to open-source tools (e.g., \textbf{Munki}).
+
+    System adminstration, homelabbing, networking, and endpoint management with a focus on macOS, primarily using \textbf{Apple MDM/DEP}, open-source tools (e.g., \textbf{Munki}, \textbf{AutoPkg}), and virtualization with \textbf{VMware ESXi/Fusion}.
+    
+\end{tabularx}
+
+
+\subsection{Soft Skills}
+
+\begin{itemize}
+
+    \item Proven ability to work and communicate as part of a team on complex projects (including multiple CS group projects).
+
+    \item Analyzing and writing about complex topics in a clear and concise manner.
+
+    \item Understanding, analyzing, and meeting the technology and business needs of clients and coworkers.
+
+    \item Ability to quickly adapt to and learn new technologies.
+
+\end{itemize}
+
+
+
+\section{Experience}
+
+\begin{tabular}{r|p{16cm}}
+    Feb 2019 & \textbf{Chief Technology Officer/Systems Administrator}
+    \\
+    Oct 2015 & \emph{Mraz Amerine \& Associates}
+    \\
+    & \begin{itemize}
+        \footnotesize{
+            \item Oversaw technology and data management at Mraz, Amerine \& Associates, a registered investment advisory firm.
+            
+            \item Supervised shift to cloud-based systems, including Microsoft Office 365 and AWS, \textbf{increasing uptime, improving performance, and drastically reducing work-impacting technology issues}.
+            
+            \item Implemented and oversaw much-needed security and backup policies -- including company-wide continuous backups, Single Sign-On, and securely sending, receiving, and archiving sensitive financial documents -- \textbf{protecting client data and reducing regulatory and business risk}.
+
+            \item Provided various technology-related business support, ranging from endpoint deployment, patching, and monitoring, to user troubleshooting, to documenting technical systems and procedures.
+        }
+        \afterlistspace
+    \end{itemize}
+    
+    \\
+    \multicolumn{2}{c}{}
+    \\
+    
+    Dec 2015 & \textbf{Strategy Consultant}
+    \\
+    Sep 2015 & \emph{10 Zero Company}
+    \\
+    %& \footnotesize{}
+    %\\
+    & \begin{itemize}
+        \footnotesize{
+            \item Developed a long-term strategic plans for business development, product marketing and production, and attracting and maintaining relationships with investors for 10 Zero Company, a healthcare technology startup.
+        }
+        \afterlistspace
+    \end{itemize}
+
+    \\
+    \multicolumn{2}{c}{}
+    \\
+
+    Aug 2014 & \textbf{Intern}
+    \\
+    May 2014 & \emph{California Asset Management}
+    \\
+    & \begin{itemize}
+        \footnotesize{
+
+            \item Developed and wrote a long-term plan for expanding adoption of California Asset Management's multiple-employer 401(k) plan among members of the California Trucking Association, \textbf{increasing plan adoption by 40\%}.
+            
+            \item Researched and summarized DoL/IRS regulations and initiatives regarding retirement plans
+            and analyzed their long-term effects, ensuring regulatory compliance and significantly reducing liabilities and expenses.
+            
+            \item Built new tools for analyzing performance using Excel and other platforms, now used throughout CAM \textbf{to reduce waste, inefficiency, and expenses, and to maximize customers' returns and satisfaction}.
+        
+        }
+
+        \afterlistspace
+    \end{itemize}
+
+\end{tabular}
+
+
+\section{Education}
+
+\begin{tabular}{r|l|p{16cm}}
+    May 2015 & \textbf{University of California, Berkeley} & \emph{Bachelors of Arts, Economics}
+    \\
+    & \multicolumn{2}{p{16cm}}{\footnotesize{My studies focused on the mathematical and statistical analysis of individuals and firms within larger financial, regulatory, and legal systems, and included courses in Computer Science, programming, and computationally intensive applied statistics to acquire more sophisticated tools for understanding and utilizing data.}}
+    \\
+    & \multicolumn{2}{p{16cm}}{\footnotesize{I participated in several individual and group projects focused on conducting and presenting economic research and statistical analysis, as well as group projects on programming, software development, and cloud computing.}}
+\end{tabular}
+
+
+\begin{comment}
+
+\subsection{Relevant Coursework}
+%\vspace{-1em}
+
+\begin{multicols}{2}
+        \begin{itemize}
+        \footnotesize{
+            \item Econometric Analysis
+            \item Law \& Economics
+            \item Financial Economics
+            \item Financial \& Behavioral Economics
+            \item Concepts in Computing with Data
+            \item Structure \& Interpretation of Computer Programs
+            \item Data Structures
+            \item Computer Architecture (Machine Structures)
+        }
+        \end{itemize}
+\end{multicols}
+
+\vspace{-8em}
+%\end{comment}
+
+
+
+\end{document}
