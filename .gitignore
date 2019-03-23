@@ -1,0 +1,23 @@
+#.gitignore file for jacobfgrant/cv
+
+#.DS_Store files
+.DS_Store
+
+
+# Archive files
+*.tar
+*.zip
+
+
+# LaTeX files
+*.aux
+*.log
+*.out
+
+
+# PDFs
+*.pdf
+
+
+# VSCode files
+.vscode/
