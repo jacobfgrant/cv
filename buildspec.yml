@@ -1,0 +1,20 @@
+version: 0.2
+
+phases:
+  install:
+    commands:
+      - echo 'Installing LaTeX...'
+      - apt-get update
+      - apt-get install -y texlive-latex-extra
+
+  build:
+    commands:
+      - echo 'Compiling PDF from TeX file...'
+      - pdflatex cv.tex
+      - pdflatex cv.tex
+    finally:
+      - echo 'Error compiling PDF'
+
+artifacts:
+  files:
+    - cv.pdf
