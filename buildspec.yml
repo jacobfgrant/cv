@@ -12,8 +12,6 @@ phases:
       - echo 'Compiling PDF from TeX file...'
       - pdflatex cv.tex
       - pdflatex cv.tex
-    finally:
-      - echo 'Error compiling PDF'
 
 artifacts:
   files:
