@@ -11,6 +11,7 @@
 \usepackage{parskip}
 \usepackage{setspace}
 \usepackage{tabularx}
+\usepackage[skins]{tcolorbox}
 \usepackage{titlesec}
 \usepackage{titling}    % Allow more titling options
 \usepackage{verbatim}   % Multiline comments
@@ -39,11 +40,11 @@
 
 % Section formatting and spacing
 \titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
-\titlespacing{\section}{0pt}{1pt}{1pt}
+\titlespacing{\section}{0pt}{0.7em}{0.7em}
 
 % Subsection formatting and spacing
 \titleformat{\subsection}{\raggedright}{}{0em}{}[\titlerule]
-\titlespacing{\subsection}{0pt}{1pt}{0em}
+\titlespacing{\subsection}{0pt}{0.7em}{0.7em}
 
 % Ragged columns
 \newcolumntype{L}{>{\raggedright\arraybackslash}X}
@@ -208,9 +209,10 @@
 
 
 \subsection{Technical Certifications}
-\vspace{-0.5em}
 
-\begin{multicols}{2}
+\begin{tcolorbox}[blanker]
+        
+    \begin{multicols}{2}
         \begin{itemize}
         \footnotesize{
             \item \href{https://www.youracclaim.com/badges/f3208524-d54a-4e0a-b47b-4b833036b2f6/public_url}{AWS Solutions Architect -- Associate}
@@ -218,8 +220,8 @@
             \item \href{https://www.youracclaim.com/badges/47ef53c6-f465-4201-ab7e-89249671183c/public_url}{Hashicorp Certified: Terraform Associate}
         }
         \end{itemize}
-\end{multicols}
-
+    \end{multicols}
+\end{tcolorbox}
 
 
 \end{document}
