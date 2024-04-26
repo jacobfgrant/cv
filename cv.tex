@@ -36,7 +36,8 @@
 \rfoot{}
 
 %%% List formatting
-\setlist{nosep, noitemsep, topsep=0pt}
+\setlist{nosep, noitemsep, topsep=0pt, leftmargin=1.75em}
+\newcommand{\afterlistspace}[0]{\vspace{-1.5em}}
 
 % Section formatting and spacing
 \titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
@@ -50,9 +51,6 @@
 \newcolumntype{L}{>{\raggedright\arraybackslash}X}
 \newcolumntype{R}{>{\raggedleft\arraybackslash}X}
 
-
-%%% New Commands
-\newcommand{\afterlistspace}[0]{\vspace{-1.5em}}
 
 
 %%%%%%%%%%%%%%%%%%%%%%
@@ -94,8 +92,8 @@
     & \textbf{Cloud Technologies}
     & \textbf{Systems Administration}
     \\
-    \begin{itemize}[noitemsep,topsep=0pt]
-        \vspace{-0.75em}
+    \begin{itemize}
+        \vspace{-0.67em}
 
         \item Extensive knowledge of multiple languages, including \textbf{Python}, \textbf{Bash}, etc.
 
